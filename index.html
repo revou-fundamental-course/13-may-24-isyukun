@@ -15,15 +15,15 @@
         </p>
     </header>
     <section>
-        <div class="selector-white" onclick="showOrHide('segitiga')">
-            Segitiga
+        <div class="selector-white" onclick="showOrHide('luasSegitiga')">
+            Luas Segitiga
         </div>
-        <div class="selector-blue" onclick="showOrHide('jajarGenjang')">
-            Jajar Genjang
+        <div class="selector-blue" onclick="showOrHide('kelilingSegitiga')">
+            Keliling Segitiga
         </div>
     </section>
-    <!-- Konten bagian atas -->
-    <section id="segitiga-section" style="display: none;">
+    <!-- Konten bagian atas untuk Luas Segitiga -->
+    <section id="luas-segitiga-section" style="display: none;">
         <div class="header">
             Luas Segitiga
         </div>
@@ -39,29 +39,76 @@
             </div>
         </div>
     </section>
-    <!-- Konten bagian bawah -->
-    <section id="segitiga-form-section" style="display: none;">
+    <!-- Konten bagian bawah untuk Luas Segitiga -->
+    <section id="luas-segitiga-form-section" style="display: none;">
         <div class="form-header">
             Hitung Luas Segitiga
         </div>
         <div class="form-style">
-            <form id="triangle-form" action="javascript:void(0);">
+            <form id="luas-segitiga-form" action="javascript:void(0);">
                 <input type="text" id="alas" placeholder="Alas"><br>
                 <input type="text" id="tinggi" placeholder="Tinggi">
             </form>
         </div>
-        <div class="left-text" id="result">
+        <div class="left-text" id="luas-result">
             L = 1/2 x a x t <br>
             L = 1/2 x 'var a' x 'var t' <br>
             L = 'var luas'
         </div>
         <div class="hitung-btn">
-            <button onclick="calculateArea()">
+            <button onclick="calculateLuas()">
                 Hitung
             </button>
         </div>
         <div class="reset-btn">
-            <button onclick="resetForm()">
+            <button onclick="resetLuasForm()">
+                Reset
+            </button>
+        </div>
+    </section>
+
+    <!-- Konten bagian atas untuk Keliling Segitiga -->
+    <section id="keliling-segitiga-section" style="display: none;">
+        <div class="header">
+            Keliling Segitiga
+        </div>
+        <div class="image">
+            <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/02/16/3693005476.png" alt="">
+            Rumus Keliling Segitiga yaitu : <br>
+            K = a + b + c <br>
+            <div class="left-text">
+                Dimana : <br>
+                K = Keliling <br>
+                a = Sisi 1 <br>
+                b = Sisi 2 <br>
+                c = Sisi 3 <br>
+            </div>
+        </div>
+    </section>
+    <!-- Konten bagian bawah untuk Keliling Segitiga -->
+    <section id="keliling-segitiga-form-section" style="display: none;">
+        <div class="form-header">
+            Hitung Keliling Segitiga
+        </div>
+        <div class="form-style">
+            <form id="keliling-segitiga-form" action="javascript:void(0);">
+                <input type="text" id="sisi1" placeholder="Sisi 1"><br>
+                <input type="text" id="sisi2" placeholder="Sisi 2"><br>
+                <input type="text" id="sisi3" placeholder="Sisi 3">
+            </form>
+        </div>
+        <div class="left-text" id="keliling-result">
+            K = a + b + c <br>
+            K = 'var a' + 'var b' + 'var c' <br>
+            K = 'var keliling'
+        </div>
+        <div class="hitung-btn">
+            <button onclick="calculateKeliling()">
+                Hitung
+            </button>
+        </div>
+        <div class="reset-btn">
+            <button onclick="resetKelilingForm()">
                 Reset
             </button>
         </div>
