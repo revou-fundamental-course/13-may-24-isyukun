@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">          
+    <title>SEFC Isyukun</title>
+</head>
+<body>
+    <header>
+        <h2>Welcome to Katik</h2>
+        <p>
+            Hai sobat, Selamat datang di katik!<br>
+            Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+        </p>
+    </header>
+    <section>
+        <div class="selector-white" onclick="showOrHide('segitiga')">
+            Segitiga
+        </div>
+        <div class="selector-blue" onclick="showOrHide('jajarGenjang')">
+            Jajar Genjang
+        </div>
+    </section>
+    <!-- Konten bagian atas -->
+    <section id="segitiga-section" style="display: none;">
+        <div class="header">
+            Luas Segitiga
+        </div>
+        <div class="image">
+            <img src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/02/16/3693005476.png" alt="">
+            Rumus Luas Segitiga yaitu : <br>
+            L = 1/2 x a x t <br>
+            <div class="left-text">
+                Dimana : <br>
+                L = Luas <br>
+                a = Panjang Alas <br>
+                t = Tinggi <br>
+            </div>
+        </div>
+    </section>
+    <!-- Konten bagian bawah -->
+    <section id="segitiga-form-section" style="display: none;">
+        <div class="form-header">
+            Hitung Luas Segitiga
+        </div>
+        <div class="form-style">
+            <form id="triangle-form" action="javascript:void(0);">
+                <input type="text" id="alas" placeholder="Alas"><br>
+                <input type="text" id="tinggi" placeholder="Tinggi">
+            </form>
+        </div>
+        <div class="left-text" id="result">
+            L = 1/2 x a x t <br>
+            L = 1/2 x 'var a' x 'var t' <br>
+            L = 'var luas'
+        </div>
+        <div class="hitung-btn">
+            <button onclick="calculateArea()">
+                Hitung
+            </button>
+        </div>
+        <div class="reset-btn">
+            <button onclick="resetForm()">
+                Reset
+            </button>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
