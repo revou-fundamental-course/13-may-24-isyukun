@@ -1,3 +1,15 @@
+// Function to ensure only numbers are entered
+function validateNumericInput(event) {
+    const value = event.target.value;
+    event.target.value = value.replace(/[^0-9.]/g, '');
+}
+
+document.getElementById('alas').addEventListener('input', validateNumericInput);
+document.getElementById('tinggi').addEventListener('input', validateNumericInput);
+document.getElementById('sisi1').addEventListener('input', validateNumericInput);
+document.getElementById('sisi2').addEventListener('input', validateNumericInput);
+document.getElementById('sisi3').addEventListener('input', validateNumericInput);
+
 function calculateLuas() {
     var alas = document.getElementById('alas').value;
     var tinggi = document.getElementById('tinggi').value;

@@ -110,3 +110,11 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+/* Hide all form sections by default */
+#luas-segitiga-section,
+#luas-segitiga-form-section,
+#keliling-segitiga-section,
+#keliling-segitiga-form-section {
+    display: none;
+}
